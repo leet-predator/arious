@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arious</title>
+    <link rel="stylesheet" href="./assets/css/style.min.css">
+    <link rel="stylesheet" href="./assets/css/gooey.min.css">
+    <meta name="author" content="Usama Tariq (leet@usama.live)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gugi&family=Caveat&family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="preloader">
+        <div class="ufo">
+            <img src="./assets/images/ufo-v2.gif" style="width:100%" class="img" alt="">
+        </div>
+        <div class="ufo-light">
+            <img src="./assets/images/gold-ray-03.svg" class="img" alt="">
+
+        </div>
+        <div class="orbs rotate-center-clock">
+            <div class="row" style="justify-content: center;">
+                <img src="./assets/images/orb-1.png" class="rotate-center-anti-clock" class="img" alt="">
+
+            </div>
+            <div class="row" style="justify-content: space-between;">
+                <img src="./assets/images/orb-2.png" class="rotate-center-anti-clock" class="img" alt="">
+                <img src="./assets/images/orb-3.png" class="rotate-center-anti-clock" class="img" alt="">
+            </div>
+            <div class="row" style="justify-content: space-around;  width: 90%; margin: 0 auto; margin-top: 33px;">
+                <img src="./assets/images/orb-4.png" class="rotate-center-anti-clock" class="img" alt="">
+                <img src="./assets/images/orb-5.png" class="rotate-center-anti-clock" class="img" alt="">
+            </div>
+
+        </div>
+        <button class="class-start-app explore-btn">
+            Explore
+        </button>
+        <!-- <div class="watermark">
+            ARIOUS
+        </div> -->
+        <div class="watermark" id="particles-js"></div>
+    </div>
+    <div id="cursor">
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="cu-sv">
+        <defs>
+          <filter id="goo">
+            <feGaussianBlur
+              in="SourceGraphic"
+              stdDeviation="10"
+              result="my-blur" />
+            <feColorMatrix
+              in="my-blur"
+              mode="matrix"
+              values="
+                      1 0 0 0 0
+                      0 1 0 0 0
+                      0 0 1 0 0
+                      0 0 0 20 -8"
+              result="my-gooey" />
+          </filter>
+        </defs>
+      </svg>
+
+    <div id="app" class="app">
+        <div class="ufo-package ">
+            <div class="ufo">
+                <img src="./assets/images/ufo-v2.gif" style="width:100%" class="img" alt="">
+            </div>
+            <div class="ufo-light">
+                <img src="./assets/images/gold-ray-03.svg" class="img" alt="">
+
+            </div>
+
+        </div>
+
+
+
+        <div class="topbar">
+            <div class="navbar">
+                <div class="menu-btn open-sidebar" onclick="sidebar(true)">
+                    <img src="./assets/images/fries-icon.svg" alt="">
+                </div>
+                <div class="logo">
+                    <img class="img" src="./assets/images/arious-holdings.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="side-menu side-bar">
+            <div class="side-menu-header">
+                <span class="material-icons-outlined close-sidebar" onclick="sidebar(false)">
+                    close
+                </span>
+            </div>
+            <div class="side-menu-body">
+                <div class="links">
+                    <div class="link">
+                        Home
+                    </div>
+                    <div class="link">
+                        About
+                    </div>
+                    <div class="link">
+                        ContactUs
+                    </div>
+                    <div class="link">
+                        Request Demo
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="full-height-section intro">
+            <video class="video-bg" id="intro-video" src="./assets/videos/lite/w-sub-t.mp4" contenteditable="false"></video>
+            <div class="overlay">
+
+
+                <!-- Bottom Gradiant -->
+                <div class="bottom-fade"></div>
+
+                <div class="content intro-content">
+                    <!-- <div class="title">
+                        <h1>
+                            Arious Holding
+                        </h1>
+                    </div> -->
+                    <div class="img-title">
+                        <img src="./assets/images/logos/arious-holding-text.png" alt="">
+                    </div>
+                    <div class="description">
+                        <p>
+                            ARIOUS Holding owns companies that operate in a wide range of industries, including metals and precious stones mining, financial and banking (finance and cryptocurrencies), energy (oil & gas), technology (AI and robotics), and insurance.
+                        </p>
+                    </div>
+                </div>
+
+
+
+                <div class="intro-controls">
+                    <div class="icon intro-play">
+                        <span class="material-icons-outlined">
+                            play_circle
+                        </span>
+                    </div>
+
+                    <div class="icon intro-pause">
+                        <span class="material-icons-outlined">
+                            pause_circle
+                        </span>
+                    </div>
+
+                    <div class="icon intro-sound-on">
+                        <span class="material-icons-outlined">
+                            volume_up
+                        </span>
+                    </div>
+
+                    <div class="icon intro-sound-off">
+                        <span class="material-icons-outlined">
+                            volume_off
+                        </span>
+                    </div>
+                </div>
+
+                <div class="scroll-animation">
+                    <img class="img" src="./assets/images/light-color-mouse-animation.gif" alt="">
+                </div>
+
+
+                <div class="bottombar">
+
+                </div>
+            </div>
+        </section>
+
+        <section class="full-height-section bg-dark outro">
+            <div class="container ">
+                <!-- <div class="ufo">
+                    <img src="./assets/images/ufo-v2.gif" style="width:100%" class="img" alt="">
+                </div>
+                <div class="ufo-light">
+                    <img src="./assets/images/gold-ray-03.svg" class="img" alt="">
+
+                </div> -->
+                <div class="logo ufo-anker">
+                    <img class="img" src="./assets/images/arious-holdings.png" alt="">
+                </div>
+                <div class="desc">
+                    ARIOUS Holding owns companies that operate in a wide range of industries, including metals and precious stones mining, financial and banking (finance and cryptocurrencies), energy (oil & gas), technology (AI and robotics), and insurance.
+                </div>
+            </div>
+        </section>
+
+        <section class="full-height-section bg-dark ">
+            <div class="oldschool-2c arious-ai">
+                <div class="video-section animate-scale-left">
+                    <div class="video">
+                        <video src="./assets/videos/branch/robo-section.mp4" muted autoplay loop></video>
+                    </div>
+                </div>
+                <div class="content-section">
+                    <div class="logo ufo-anker">
+                        <img src="./assets/images/logos/arious-singalrious.png" alt="">
+                    </div>
+                    <div class="desc">
+
+                        A UAE-registered company, Singularious is designed and developed in partnership with the world-leading companies, which is geared towards bringing beneficial planetary-scale changes using the advanced technologies (Spatial Web, Artificial General Intelligence,
+                        Blockchain, Robotics, IoT, Metaverse, Digital Twin, Virtual and Augmented Reality). It was founded with initial operations in GCC countries as well as Africa with global aspirations.
+
+
+                    </div>
+                    <div class="more-desc-btn">
+                        Show More
+                    </div>
+                    <div class="more-desc">
+                        <div class="close-desc">
+                            &times;
+                        </div>
+                        <h2>
+                            Arious Singalrious
+                        </h2>
+                        <p>
+
+                            A UAE-registered company, Singularious is designed and developed in partnership with the world-leading companies, which is geared towards bringing beneficial planetary-scale changes using the advanced technologies (Spatial Web, Artificial General Intelligence,
+                            Blockchain, Robotics, IoT, Metaverse, Digital Twin, Virtual and Augmented Reality). It was founded with initial operations in GCC countries as well as Africa with global aspirations. <br><br> In
+                            its current portfolio, Singularious has two : main projects: <br><br> Firstly, we focused primarily on AI and Blockchain projects in Africa, such as digitalizing the African economy and launching a series of cryptocurrencies
+                            backed by natural resources. <br><br> Secondly, the creation of the world's first Conscious City; the concept is to create an integrated urban system, organized by intelligent infrastructure, capable of creating holistic value
+                            that can be optimized adaptively.<br><br> With a Conscious City, you can transcend the failings and shortcomings of Smart Cities. It understands its residents, attends to individual needs with precision, and promotes collective
+                            prosperity in a consistent way on an urban scale by means of systemic coordination.<br><br>
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="full-height-section bg-dark ">
+            <div class="oldschool-2c arious-meta">
+
+                <div class="content-section">
+                    <div class="logo ufo-anker">
+                        <img src="./assets/images/logos/arious-meta.png" alt="">
+                    </div>
+                    <div class="desc">
+                        ARIOUS META VISION FOR AFRICA is to systematize and legalize artisanal mining, partnering with governments on the continent to help Artisanal Miners improve their working conditions so that they can increase production and work in a safer environment.
+
+                    </div>
+                </div>
+                <div class="video-section animate-scale-right">
+                    <div class="video">
+                        <video src="./assets/videos/branch/meta-section.mp4" muted autoplay loop></video>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="full-height-section bg-dark ">
+            <div class="oldschool-2c arious-energy">
+                <div class="video-section animate-scale-left">
+                    <div class="video">
+                        <video src="./assets/videos/branch/energy-section.mp4" muted autoplay loop></video>
+                    </div>
+                </div>
+                <div class="content-section">
+                    <div class="logo ufo-anker">
+                        <img src="./assets/images/logos/arious-energy.png" alt="">
+                    </div>
+                    <div class="desc">
+                        ARIOUS ENERGY is a privately held, East African independent oil and gas company, incorporated and based in the United Arab Emirates.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="full-height-section bg-dark ">
+            <div class="oldschool-2c arious-investment">
+
+                <div class="content-section">
+                    <div class="logo ufo-anker">
+                        <img src="./assets/images/logos/arious-Investment.png" alt="">
+                    </div>
+                    <div class="desc">
+                        ARIOUS Investment Group has already established and incorporated a FULL OPERATIVE BANK with a WORLDWIDE MANAGEMENT TEAM with over 30 years of experience
+                    </div>
+                </div>
+                <div class="video-section animate-scale-right">
+                    <div class="video">
+                        <video src="./assets/videos/branch/investment-section.mp4" muted autoplay loop></video>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="full-height-section bg-dark ">
+            <div class="oldschool-2c arious-royal">
+                <div class="video-section animate-scale-left">
+                    <div class="video">
+                        <video src="./assets/videos/branch/royal-section.mp4" muted autoplay loop></video>
+                    </div>
+                </div>
+                <div class="content-section">
+                    <div class="logo ufo-anker">
+                        <img src="./assets/images/logos/arious-royal-collection.png" alt="">
+                    </div>
+                    <div class="desc">
+                        As the world's largest private gem and art collection, Arious serves as a benchmark on a variety of worldwide unique exhibitions.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="full-height-section bg-dark" style="display: block; position: relative;">
+            <div class="footer">
+                <div class="custom-shape-divider-top-1649325574">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                    </svg>
+                </div>
+
+
+                <div class="content ">
+                    <div class="logo ufo-anker">
+                        <img src="./assets/images/logos/main-logo.png" alt="">
+                    </div>
+                </div>
+
+
+                <div class="footer-body">
+                    <div class="footer-title">
+                        Arious Holding
+                    </div>
+                    <div class="col-2">
+                        <div class="left">
+                            <ul>
+                                <li>Home</li>
+                                <li>About </li>
+                                <li>Contact Us</li>
+                                <li>Celeste Slater 606-3727 Ullamcorper. Street Roseville NH 11523 (786) 713-8616</li>
+
+                            </ul>
+                        </div>
+                        <!-- <div class="right">
+
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+    </div>
+
+
+
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./assets/js/pathAnimator.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <script>
+        let intro_video = document.getElementById('intro-video');
+        // intro_video.play();
+        // intro_video.currentTime = 16;
+
+
+
+
+
+        $(document).ready(function() {
+            preloader_ufo = $('.preloader').find('.ufo');
+            $('.preloader').trigger('click');
+            preloader_animate();
+            // preloader(false);
+            // intro_mouseParalex(true);
+
+        });
+    </script>
+    <script src="./assets/js/App.js"></script>
+    <script src="./assets/js/gooey.js"></script>
+
+</body>
+
+</html>

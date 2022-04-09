@@ -1,0 +1,15 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="500" height="500" viewBox="0 0 500 500">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="250" y1="-672.93" x2="250" y2="411.91" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#e7cc99" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <title>ray-gold</title>
+  <path class="cls-1" d="M459.37,404.39,298.91,48.21H201.09L40.63,404.39a10.38,10.38,0,0,0-3.13,6.94c0,22.34,95.14,40.46,212.5,40.46s212.5-18.12,212.5-40.46A10.38,10.38,0,0,0,459.37,404.39Z"/>
+</svg>
