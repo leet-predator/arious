@@ -163,6 +163,17 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
+.ufo-cursor {
+    height: 40px;
+    position: absolute;
+    z-index: 11;
+    user-select: none;
+    pointer-events: none;
+    img {
+        height: 100%;
+    }
+}
+
 .preloader {
     position: fixed;
     height: 100vh;
@@ -417,6 +428,8 @@ body::-webkit-scrollbar-thumb {
                 .img-title {
                     height: 90px;
                     text-align: center;
+                    width: fit-content;
+                    margin: 0 auto;
                     @include mobile() {
                         height: 50px;
                     }
@@ -789,14 +802,17 @@ body::-webkit-scrollbar-thumb {
     // border: 1px solid red;
     position: absolute;
     bottom: 0;
-    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAAXNSR0IArs4c6QAAAE5JREFUKFNjZGBgMGZgYDjLgAAgPgigiDEiKQAxkTWhGICsEN1kFI0whegmIVsNlgMpxKYI5iKYO41JUojNE1ithllDlGewKcYIHqICHAARyRbX7SlXyQAAAABJRU5ErkJggg==") repeat;
+    color: $accent;
+    // background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAAXNSR0IArs4c6QAAAE5JREFUKFNjZGBgMGZgYDjLgAAgPgigiDEiKQAxkTWhGICsEN1kFI0whegmIVsNlgMpxKYI5iKYO41JUojNE1ithllDlGewKcYIHqICHAARyRbX7SlXyQAAAABJRU5ErkJggg==") repeat;
     // background-image: linear-gradient(to bottom, #e7cc99 0%, #835f35 100%);
-    background-color: $accent;
+    // background-color: $accent;
+    // border-radius: 10px;
     // border: 1px solid red;
     // clip-path: path(d="M1920,0c0,0-158.5,759.5-680.5,612.5c-428.85-120.77-522-682-1239-150L0,1080h1920V0z");
     // object-fit: cover;
     overflow: hidden;
     .custom-shape-divider-top-1649325574 {
+        display: none;
         position: absolute;
         top: 0;
         left: 0;
@@ -823,7 +839,7 @@ body::-webkit-scrollbar-thumb {
             position: absolute;
             // position: relative;
             left: 10%;
-            top: 60px;
+            top: 45%;
             img {
                 height: 100%;
             }
@@ -838,7 +854,6 @@ body::-webkit-scrollbar-thumb {
         width: 50%;
         .footer-title {
             font-size: 40px;
-            color: black;
             font-family: Poppins;
             text-align: center;
             font-weight: bolder;
@@ -862,6 +877,7 @@ body::-webkit-scrollbar-thumb {
                         &:hover {
                             background-color: darken($color: $accent, $amount: 10);
                             border-radius: 10px;
+                            color: black;
                         }
                     }
                 }

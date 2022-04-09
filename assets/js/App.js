@@ -8,7 +8,8 @@ var intro_paused_at = 0;
 var intro_video_visible = true;
 var intro_content = $('.intro-content');
 var ufo_package = $('.ufo-package');
-var explore_btn = $('.explore-btn')
+var explore_btn = $('.explore-btn');
+var ufo_cursor = $('.ufo-cursor');
 var click_audio = new Audio(`${host}/assets/audios/button-hit.wav`);
 var preloader_audio = new Audio(`${host}/assets/audios/space-drift.mp3`);
 
@@ -88,6 +89,7 @@ function explore_follows(state) {
             // var screenWidth = window.innerWidth;
             let mousey = event.clientY; // Gets Mouse Y
             explore_btn.css({ 'left': `${mousex - 40}px`, 'top': `${mousey-40}px` });
+            ufo_cursor.css({ 'left': `${mousex - (ufo_cursor.width()/2)}px`, 'top': `${mousey}px` });
 
         });
     } else {
